@@ -8,6 +8,16 @@
 <?php get_header();
     $templpath = get_template_directory_uri();
 ?>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="connection">
             <h3>PEOPLE WHO LIKE BEACHES</h3>
             <ul>
